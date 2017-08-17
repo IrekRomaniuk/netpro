@@ -15,7 +15,7 @@ export default class Signup extends React.Component {
     let email = this.refs.email.value.trim();
     let password = this.refs.password.value.trim();
 
-    if (password.length < 9) {
+    if (password.length < 8) {
       return this.setState({error: 'Password must be more than 8 characters long'});
     }
 
@@ -31,7 +31,7 @@ export default class Signup extends React.Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1>Join Short Lnk</h1>
+          <h1>Join Netpro</h1>
 
           {this.state.error ? <p>{this.state.error}</p> : undefined}
 
