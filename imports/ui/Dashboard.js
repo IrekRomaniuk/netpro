@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ShieldsList from './ShieldsList';
 import PrivateHeader from './PrivateHeader';
 
 export default () => {
@@ -7,7 +7,7 @@ export default () => {
     <div>
       <PrivateHeader title="Dashboard"/>
       <div className="page-content">
-        Dashboard page content.
+        <ShieldsList/>
       </div>
     </div>
   );
