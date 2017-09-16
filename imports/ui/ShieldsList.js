@@ -5,7 +5,7 @@ import { Tracker } from 'meteor/tracker';
 // import FlipMove from 'react-flip-move';
 
 import { Shields } from '../api/shields';
-//import ShieldsListItem from './ShieldsListItem';
+import ShieldsListItem from './ShieldsListItem';
 
 export default class ShieldsList extends React.Component {
   constructor(props) {
@@ -26,7 +26,7 @@ export default class ShieldsList extends React.Component {
     console.log('componentWillUnmount ShieldsList');
     this.shieldsTracker.stop();
   }
-  /*renderShieldsListItems() {
+  renderShieldsListItems() {
     if (this.state.shields.length === 0) {
       return (
         <div className="item">
@@ -35,15 +35,15 @@ export default class ShieldsList extends React.Component {
       );
     }
 
-    return this.state.shields.map((link) => {
-      const shortUrl = Meteor.absoluteUrl(link._id);
-      return <ShieldsListItem key={link._id} shortUrl={shortUrl} {...link}/>;
+    return this.state.shields.map((shield) => {
+      return <ShieldsListItem key={shield._id} {...shield}/>;
     });
-  }*/
+  }
   render() {
     return (
       <div>
           {this.state.shields.length}
+          {this.renderShieldsListItems()}
       </div>
     );
   }

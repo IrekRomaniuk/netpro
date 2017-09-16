@@ -5,7 +5,7 @@ import PrivateHeader from './PrivateHeader';
 export default () => {
   return (
     <div>
-      <PrivateHeader title="Dashboard"/>
+      <PrivateHeader title="Netpro"/>
       <div className="page-content">
         <ShieldsList/>
       </div>
