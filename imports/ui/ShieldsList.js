@@ -43,6 +43,7 @@ export default class ShieldsList extends React.Component {
   }*/
   render() {
     return (
+        <div>         
          <Griddle styleConfig={styleConfig}
             data={this.state.shields}
             plugins={[plugins.LocalPlugin]}
@@ -63,7 +64,11 @@ export default class ShieldsList extends React.Component {
                 <ColumnDefinition id="Policy" title="Policy Name" /> 
                 <ColumnDefinition id="Comment" title="Comment" style={{fontSize: 4}}/>               
             </RowDefinition>
-        </Griddle>
+         </Griddle>
+        <p><br />Total number of shields in database is  
+           <span style={{color: "blue"}}> {this.state.shields.length}</span>
+        </p>
+        </div>
     );
   }
 };
@@ -79,7 +84,7 @@ const CustomHeading = ({title}) => <span style={{ color: '#AA0000' }}>{title}</s
 const CustomLocationComponent = ({value}) => <a href={`https:///${value}:4434/>`} target="_blank">{value}</a>
 const NewLayout = ({ Table, Pagination, Filter, SettingsWrapper }) => (
     <div>
-      <Filter />      
+      <Filter />     
       <Table />
       <Pagination />
     </div>
