@@ -7,11 +7,17 @@ export default class ShieldsListItem extends React.Component {
     this.state = {
     };
   }
-
+  /*componentDidMount() {
+    console.log(this.props)
+  }*/
+  
   render() {
     return (
-      <div className="item">
+        <div className="item">
         <h2>{this.props.Name}</h2>
+        <h4>{this.props.Ext}   {this.props.Int}</h4> 
+        <h4>{this.props.Policy}</h4> 
+        <h5>{this.props.Comment}</h5>
       </div>
     );
   }
