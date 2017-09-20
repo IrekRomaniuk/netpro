@@ -1,0 +1,41 @@
+.griddle-row {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    box-sizing: inherit;
+   
+    &:nth-child(odd) {
+     background-color: #e6e6e6;
+    }
+   }
+   
+   .griddle-cell {
+    text-align: left;
+    font-feature-settings: tnum;
+    -moz-font-feature-settings: tnum;
+    -ms-font-feature-settings: tnum;
+    -webkit-font-feature-settings: tnum;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: calc(0.75rem - 1px);
+   }
+   
+   .griddle-pagination {
+       display: flex;
+       justify-content: center;
+       height: 35px;
+   
+       .griddle-page-select {
+         display: none; // delete this if showing Page numbers for pagination
+   
+         .griddleNextButton {
+             width: 300px;
+             height: 100%;
+             background: transparent;
+             border: 1px solid grey;
+             border-radius: 6px;
+             font-size: 14px;
+         }
+       }
+   }
