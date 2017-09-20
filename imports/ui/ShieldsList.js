@@ -53,7 +53,7 @@ export default class ShieldsList extends React.Component {
             sortProperties={sortProperties}
             pageProperties={{
                 currentPage: 1,
-                pageSize: 30,
+                pageSize: 20,
                 //recordCount: 100,                
             }}            
          >   
