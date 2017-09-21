@@ -1,3 +1,3 @@
-# Boilerplate Meteor React Project
+# Netpro (under development)
 
-This includes a basic react and auth setup.
+Read [my blog post](https://medium.com/@IrekRomaniuk/checkosh-63b5d07555b6)
