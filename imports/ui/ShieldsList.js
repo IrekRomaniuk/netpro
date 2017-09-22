@@ -46,7 +46,8 @@ export default class ShieldsList extends React.Component {
                 <ColumnDefinition id="Name" title="Name" customHeadingComponent={CustomHeading}/>
                 <ColumnDefinition id="Ext" title="External IP" customComponent={CustomLocationComponent}/>
                 <ColumnDefinition id="Int" title="Internal IP" customComponent={CustomLocationComponent}/>
-                <ColumnDefinition id="Policy" title="Policy Name" /> 
+                <ColumnDefinition id="Policy" title="Policy Name" />
+                <ColumnDefinition id="Region" title="Region" /> 
                 <ColumnDefinition id="Comment" title="Comment" style={{fontSize: 4}}/>               
             </RowDefinition>
          </Griddle>
